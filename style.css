@@ -12,5 +12,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+#navbar_div>h2{
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+#search_input{
+  position: absolute;
+  left: 31%;
+  top: 21%;
 }
