@@ -14,15 +14,11 @@
     background-size: cover;
 }
 
-#navbar_div>h2{
-  display: inline-block;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-}
-
 #search_input{
-  position: absolute;
-  left: 31%;
-  top: 21%;
+ margin-left: 10px;
+ margin-top: 1px;
+} 
+
+#navbar_div{
+  display: flex;
 }
