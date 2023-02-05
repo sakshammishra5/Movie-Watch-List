@@ -19,7 +19,54 @@ searchBtn.addEventListener("click", (e) => {
 					.then((lol) => {
 						console.log(lol);
 
-						watchlistContainer.innerHTML += `<div class="card mb-3" style="max-width: 540px;">
+						watchlistContainer.innerHTML += `
+					<div>
+						<div class="Card">
+							<div class="movie-image">
+								<img
+									src="${data.Search[i].Poster}"
+									alt="Image of movie"
+								/>
+							</div>
+							<div class="movie-info">
+								<div class="movie-name-rating">
+									<span><h2>${data.Search[i].Title}</h2></span
+									><span><i class="fa-solid fa-star"></i></span
+									><span>${lol.imdbRating}</span>
+								</div>
+								<div class="movie-otherinfo">
+									<span>164min</span> <span>${lol.Genre}</span
+									><span><i class="fa-solid fa-circle-plus"></i></span
+									><span>Watchlist</span>
+								</div>
+								<div class="movie-story">
+									<p>
+										${lol.Plot}
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr>
+					</div>
+	  
+`
+					})
+			}
+		})
+})
+
+// searchInput.addEventListener("input", (e) => {
+// 	var searchString = e.target.value;
+// 	console.log(searchString);
+// 	fetch(`http://www.omdbapi.com/?s=${searchString}&apikey=abfb5a92`)
+// 		.then((res) => res.json())
+// 		.then((data) => {
+// 			console.log(data);
+// 		});
+
+// });
+
+/* <div class="card mb-3" style="max-width: 540px;">
 		<div class="row g-0">
 		  <div class="col-md-4">
 			<img src="${data.Search[i].Poster}" class="img-fluid rounded-start" alt="...">
@@ -32,38 +79,4 @@ searchBtn.addEventListener("click", (e) => {
 			</div>
 		  </div>
 		</div>
-	  </div>
-	  
-`;
-					});
-			}
-		});
-
-	watchlistContainer.innerHTML = `<div class="card mb-3" style="max-width: 540px;">
-		<div class="row g-0">
-		  <div class="col-md-4">
-			<img src="https://images.unsplash.com/photo-1675453442429-1ea5b9652743?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" class="img-fluid rounded-start" alt="...">
-		  </div>
-		  <div class="col-md-8">
-			<div class="card-body">
-			  <h5 class="card-title">Movie Name</h5>
-			  <p>99min</p><p>Action,Crime,Thriller</p>
-			  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-`;
-});
-
-// searchInput.addEventListener("input", (e) => {
-// 	var searchString = e.target.value;
-// 	console.log(searchString);
-// 	fetch(`http://www.omdbapi.com/?s=${searchString}&apikey=abfb5a92`)
-// 		.then((res) => res.json())
-// 		.then((data) => {
-// 			console.log(data);
-// 		});
-
-// });
+	  </div> */

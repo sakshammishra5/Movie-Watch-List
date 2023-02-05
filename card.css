@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.movie-image > img {
+    width: 215px;
+    height: 202px;
+    border-radius: 10.32941px
+}
+
+.Card {
+    display: flex;
+    width: 556px;
+    height: 204.41px;
+    line-height: 20px;
+    /* border: 1px solid black; */
+    border-radius: 4px;
+    font-family: Inter;
+    margin-left: auto;
+    margin-right: auto;
+}
+.movie-name-rating {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.movie-name-rating > span > h2 {
+	font-weight: 500;
+	font-size: 18px;
+	color: #000000;
+}
+
+.movie-name-rating > :nth-child(3){
+	font-weight: 400;
+	font-size: 12px;
+	color: #111827;
+	cursor: pointer;
+}
+
+.movie-name-rating > :nth-child(2) {
+	color: gold;
+}
+
+.movie-otherinfo {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #111827;
+}
+
+.movie-story > p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #6b7280;
+}
+.movie-info {
+	margin-left: 25px;
+}
