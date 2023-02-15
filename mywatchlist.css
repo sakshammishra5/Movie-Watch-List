@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-#navbar{
+#mywatchlist{
+
     background-image: url("https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     width: 100%;
     height: calc(100vw*1/8);
@@ -12,26 +13,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-
-#search_input{
- margin-left: 10px;
- border: 1px solid black;
- width: 21em;
- height: 2em;
-} 
-
-#movieSearch-container{
-  box-sizing: border-box;
-  display: flex;
-  padding-top: 8em;
-  padding-left: 13em;
-}
-
-#watchlistContainer{
-position: absolute;
-margin: 0;
-padding: 0;
+#mywatchlist>h2{
+display: flex;
+justify-content: center;
+padding: 50px 0;
 }

@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", (e) => {
 					.then((lol) => {
 						console.log(lol);
 
-						watchlistContainer.innerHTML += `
+						watchlistContainer.innerHTML +=`
 					<div>
 						<div class="Card">
 							<div class="movie-image">
@@ -36,7 +36,7 @@ searchBtn.addEventListener("click", (e) => {
 								</div>
 								<div class="movie-otherinfo">
 									<span>164min</span> <span>${lol.Genre}</span
-									><span><i class="fa-solid fa-circle-plus"></i></span
+									><span><a href="https://www.w3schools.com"><i class="fa-solid fa-circle-plus"></i></a></span
 									><span>Watchlist</span>
 								</div>
 								<div class="movie-story">
