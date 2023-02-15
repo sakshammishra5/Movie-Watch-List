@@ -35,3 +35,8 @@ position: absolute;
 margin: 0;
 padding: 0;
 }
+
+#mywatchlist{
+  display: block;
+  margin-left: auto;
+}

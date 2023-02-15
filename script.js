@@ -51,6 +51,7 @@ searchBtn.addEventListener("click", (e) => {
 	  
 `
 					})
+					.catch(console.log("Not found"))
 			}
 		})
 })
